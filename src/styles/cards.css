@@ -62,3 +62,16 @@ section {
 .details button:hover {
     background-color: #4CAF50; 
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile view */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    section {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablet view */
+    }
+}
